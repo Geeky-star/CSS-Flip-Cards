@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+    <h1> OUR PROJECTS </h1>
+    <h3>"The most important thing in communication is hearing what isn't said."</h3>
+    <h4>Peter Drucker</h4>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Filter</button>
+        <div id="myDropdown" class="dropdown-content">
+          <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+          <a href="#about">About</a>
+          <a href="#blog">Blog</a>
+          <a href="#contact">Contact</a>
+          <a href="#custom">Community</a>
+          <a href="#support">Support</a>
+          <a href="#tools">More Projects</a>
+        </div>
+      </div>
+    <div class="container">
+    <div class="card1">
+       <div class="face face1">
+           <div class="content">
+        <img src = "image.jpg">
+        </div>
+        </div>
+       <div class="face face2">
+           <div class="content">
+               <p>SwadeshiAndolan 2020 is started by keeping in mind to promote the Indian Apps and 
+                   Products in our country by showing the alternatives from other products.
+                It will help out all citizens to bring Swadesh back and to contribute to their country by 
+                buying Indian Products and using Indian Apps.
+                   This App contains all Indian Apps which can be switched with china apps.
+                   You can easily find replacement apps for china apps.
+               </p>
+           </div>
+       </div>
+    </div>
+    <div class="visit1">
+      <div class="icons">
+        <i class="fa fa-comment icon-large"></i>
+        <i class="fa fa-thumbs-up icon-3x"></i>
+        <i class="fa fa-share-alt-square icon-3x"></i>
+      </div>
+      <div class="buttons">
+        <a href="https://play.google.com/store/apps/details?id=com.coolage.swadeshiandolan_app&hl=en_IN" class="btn btn-primary">Visit</a>
+    </div>
+    </div>
+    <div class="card2">
+        <div class="face face1">
+            <div class="content">
+         <img src = "developer.png">
+         </div>
+         </div>
+        <div class="face face2">
+            <div class="content">
+                <p>
+                    This android app is a one stop shop for their university. 
+                    Some of the best features include campus upcoming events, 
+                    student profiles, used book marketplace, hostel management, 
+                    online food ordering, and many more to meet the needs of students to ease out their college life.
+                </p>
+            </div>
+        </div>
+     </div>
+     <div class="visit2">
+       <div class="icons">
+         <i class="fa fa-comment icon-3x" aria-hidden="true"></i>
+         <i class="fa fa-thumbs-up icon-3x" aria-hidden="true"></i>
+         <i class="fa fa-share-alt-square icon-3x" aria-hidden="true"></i>
+         </div>
+         <div class="buttons">
+          <a href="https://coolage.app/" class="btn btn-primary">Visit</a>
+        </div>
+     </div>
+</div>
+<script>
+    function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+</body>
+
+</html>
